@@ -1,0 +1,41 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #333;
+    color: aliceblue;
+}
+a {
+    
+    color: rgb(99, 238, 57);
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:hover, a:active{
+    color: #eb920e;
+}
+
+caption, th, td{
+    border-style: ridge;
+
+    
+
+}
+
+caption {
+    border-color: #532929;
+
+}
+thead, th, td {
+    border-color: #eb920e;
+
+}
+
+source, img {
+    border-radius: 100px;
+}
+

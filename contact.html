@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <link rel="stylesheet" href="/main.css">
+    
+</head>
+
+<body>
+
+    
+    <main>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+         <p>Have a project, question or opprtunity? Feel free to get in touch.</p>
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" 
+            id="firstname" placeholder="Ahmad"
+            required autocomplete="given-name" autofocus>
+            
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" 
+                id="lastname" placeholder="Rawoofi"
+                autocomplete="family-name" required>
+            </p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"
+            name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone"
+            name="phone">
+
+            </fieldset>   
+            <br>
+
+            <fieldset>
+                <legend>Project Information</legend>
+
+                <label for="company">Company</label>
+                <input type="text" name="company" id="company"
+                >
+
+                <label for="project-type">Project Type</label>
+                <select name="project-type" id="project-type">
+                    <option value=""></option>
+                    <option value="website">Website</option>
+                    <option value="web-application">Web Application</option>  
+                    <option value="other">Other</option>              
+                </select>
+
+                <label for="budget">Budget</label>
+                <input type="text" name="budget" id="budget" 
+                list="budget-cost">
+                <datalist id="budget-cost">
+                    <option value="Under 500€"></option>
+                    <option value="500€-2000€"></option>
+                    <option value="2000€-5000€"></option>
+                    <option value="Special"></option>
+                </datalist>
+                <br>
+                <br>
+
+                <label for="send-message">Send Message:</label>
+                <br>
+                <textarea name="send-message" id="send-message"
+                cols="35" rows="7" maxlength="200" required 
+                placeholder="write your message here..."></textarea>
+
+                <input type="radio" name="select-method" id="select-email" value="email" required>
+                <label for="select-email">Email</label>
+
+                <input type="radio" name="select-method" id="select-phone" value="phone">
+                <label for="select-phone">Phone</label>
+
+                <input type="checkbox" name="contact-agreement" id="contact-agreement"
+                required>
+                <label for="contact-agreement" >I agree to be contacted</label>
+            </fieldset>
+            <br>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Send</button>
+
+        </form>
+
+        </section>
+
+        
+
+
+    </main>
+
+    <footer>     <p>         <strong>Ahmad Rawoofi</strong> Web Developer     </p>
+
+
+<nav aria-label="Footer Navigation">
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+    </ul>
+</nav>
+
+<p>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+    |
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    |
+    <a href="mailto:rondom@gmail.com">Email</a>
+</p>
+<hr>
+<p>
+    &copy; 2026 Ahmad Rawoofi. All rights reserved.
+</p>
+</footer>
+</body>
+</html>
